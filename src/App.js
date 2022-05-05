@@ -46,7 +46,7 @@ const App = () => {
   if (hasClaimedNFT) {
     return (
       <div>
-        <p>You have a passed the GreenhouseGate</p>
+        <p>You have passed the GreenhouseGate</p>
       </div>
     )
   }
