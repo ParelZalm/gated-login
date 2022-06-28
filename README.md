@@ -24,6 +24,12 @@ On `src/index.js`, you'll find our `ThirdwebProvider` wrapping your app, this is
 
 on `src/App.js`, you'll find the `useMetamask` hook that we use to connect the user's wallet to MetaMask, `useDisconnect` that we use to disconnect it, and `useAddress` to check the user's wallet address once connected. 
 
+## Create NFT for testnetwork
+
+To test the NFT gated application, create an NFT at [thirdweb dashboard](https://thirdweb.com/dashboard)
+
+define the NFT contract adress in `src/App.js`
+
 ## Learn More
 
 To learn more about thirdweb, React and CRA, take a look at the following resources:
@@ -34,6 +40,3 @@ To learn more about thirdweb, React and CRA, take a look at the following resour
 - [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started) - learn about CRA features.
 - [React documentation](https://reactjs.org/) - learn React.
 
-## Join Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
