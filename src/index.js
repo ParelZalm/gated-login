@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
 
-// This is the chainId your dApp will work on.
+// This is the chainId your dApp will work on. Currently using Rinkeby as testnetwork
 const activeChainId = ChainId.Rinkeby;
 
 ReactDOM.render(

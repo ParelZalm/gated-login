@@ -4,7 +4,7 @@ import { useState, useEffect} from 'react';
 const App = () => {
   const address = useAddress();
   const connectWithMetamask = useMetamask();
-  // specify the nft contract for gated login
+  // specify the nft contract for gated login: create an NFT at https://thirdweb.com/dashboard
   const nftDrop = useNFTDrop("0x1F6aE72C5C1Aa0abd2Aa8740F53056B5Be8Ed127");
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
   const [isClaiming, setIsClaiming] = useState(false);
@@ -25,9 +25,11 @@ const App = () => {
       }
     };
     checkBalance();
+    // check if user wallet has nft
   }, [address, nftDrop]);
 
   const mintNft = async () => {
+    // mint nft 
     try{
       setIsClaiming(true);
       await nftDrop.claim(1);
