@@ -4,6 +4,7 @@ import { useState, useEffect} from 'react';
 const App = () => {
   const address = useAddress();
   const connectWithMetamask = useMetamask();
+  // specify the nft contract for gated login
   const nftDrop = useNFTDrop("0x1F6aE72C5C1Aa0abd2Aa8740F53056B5Be8Ed127");
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
   const [isClaiming, setIsClaiming] = useState(false);
